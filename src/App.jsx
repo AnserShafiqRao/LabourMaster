@@ -1,0 +1,30 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import JobSeekers from './Pages/JobSeekers';
+import Employers from './Pages/Employers';
+import ContactUs from './Pages/ContactUs';
+import OurServices from './Pages/OurServices';
+import Header from './Components/Header';
+
+function App() {
+  return (
+  <Router>
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about-us/' element={<About />}/>
+        <Route path='/job-seekers/' element={<JobSeekers />}/>
+        <Route path='/employers/' element={<Employers />}/>
+        <Route path='/our-services/' element={<OurServices />}/>
+        <Route path='/contact-us/' element={<ContactUs />}/>
+      </Routes>
+    </div>
+
+  </Router>
+  );
+}
+
+export default App;
