@@ -1,0 +1,118 @@
+/* Header */
+.header {
+    top: 0%;
+    z-index: 10;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    transition: top 0.3s ease-in-out; /* Smooth transition for header visibility */
+  }
+  
+  .active-background {
+    background-color: #bc9740;
+    width: fit-content;
+  }
+  
+  .mobile-menu-icon {
+    color: var(--golden-color);
+  }
+  
+  .sticky-header.hidden {
+    top: -100% !important;   
+  }
+  
+  .sticky-header.visible {
+    top: 0% !important; 
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer-heading {
+    color: var(--golden-color);
+    font-family: var(--montserrat-text-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+  }
+  
+  .footer-menu {
+    font-size: 0.95vw;
+    color: var(--white-color);
+    letter-spacing: 0.5px;
+    margin-block: 1.25vh;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-menu:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid var(--golden-color);
+  }
+  
+  .footer-contact-btn {
+    width: fit-content;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    font-size: 0.95vw;
+    font-weight: 600;
+    background-color: var(--golden-color);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-contact-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-contact-links {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0.5vh 0.25vw;
+    font-size: 1vw;
+    color: var(--white-color);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-contact-links:hover {
+    transform: scale(1.05);
+    border-bottom: 2px solid var(--golden-color);
+  }
+  
+  .footer-social-icons {
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: var(--white-color);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social-icons:hover {
+    color: var(--golden-color);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1000px) {
+    /* Footer */
+    .footer-menu {
+      font-size: 3.5vw;
+    }
+  
+    .footer-heading {
+      margin-top: 2%;
+    }
+  
+    .footer-contact-btn {
+      width: fit-content;
+      padding: 1vh 2vw;
+      border-radius: 10px;
+      font-size: 3.5vw;
+    }
+  
+    .footer-contact-links {
+      font-size: 3.5vw;
+    }
+  
+    .footer-social-icons {
+      font-size: 6vw;
+      margin-left: 3vw;
+    }
+  }
+  

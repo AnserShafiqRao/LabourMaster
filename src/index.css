@@ -1,4 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+:root{
+  --lato-text-font: 'Lato', sans-serif;
+  --montserrat-text-font: 'Montserrat', sans-serif;
+  --exo-2-text-font: 'Exo 2', sans-serif;
+
+  --golden-color: #E3C86A;
+  --dark-golden-color: #B98831;
+  --blackish-golden-color: #2b281b;
+  --dark-black-color: #2b2b2b;
+  --white-color: #fcfcfc;
+}
+
+*{
+  font-family: var(--exo-2-text-font);
+}
+body{
+  background-color: #fffdf9;
+}
+::-webkit-scrollbar{
+  width: 7px
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(70, 70, 70);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--golden-color);
+  border-radius: 20px;
+}
+.hideOnMobile{
+  display: unset;
+}
+.hideOnDesktop{
+  display: none;
+}
+@media (max-width:1000px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .hideOnDesktop{
+    display: unset;
+  }
+}

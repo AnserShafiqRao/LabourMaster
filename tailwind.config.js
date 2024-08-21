@@ -5,8 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        sansSerif: ['Lato']
+      colors:{
+        transparent: 'transparent',
+        current: 'currentColor',
+        'header-back': '#262626',
       }
     },
   },

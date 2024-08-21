@@ -7,6 +7,7 @@ import Employers from './Pages/Employers';
 import ContactUs from './Pages/ContactUs';
 import OurServices from './Pages/OurServices';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/our-services/' element={<OurServices />}/>
         <Route path='/contact-us/' element={<ContactUs />}/>
       </Routes>
+      <Footer />
     </div>
 
   </Router>
