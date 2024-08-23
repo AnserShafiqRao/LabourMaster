@@ -7,7 +7,7 @@
     background-size: cover  ;
     background-repeat: no-repeat;
 }
-.home-section1-inner{
+.section-1-inner-content{
     background-color: rgba(27, 27, 27, 0.605);
     border-radius: 25px ;
     padding: 2rem 2rem;
@@ -21,8 +21,6 @@
 .hover-effect:hover{
     transform: scale(1.05);
 }
-/* Section-2 */
-
 /* Section-3 */
 .video-background-container {
     position: relative;
@@ -50,14 +48,122 @@
     z-index: 1;
     padding: 20px;
 }
+/* Section 4 */
+.card-background{
+    background:linear-gradient(45deg, #c29e3b22, #e2b44d22, #f0c24d22, #f2cf5922, #c29f3b22);;
+}
+
+/* Section 7 */
+.home-section-7{
+    background-image: url('../../Images/Home/home-6.jpg');
+}
+.last-section{
+    background-position: right 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+    position: relative;
+}
+.last-section::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #2f2f2fa4;
+}
+
+/* About Us */
+/* Section 1 */
+.about-section-1{
+    background-image: url('../../Images/AboutUs/about-1.jpg ');
+    background-position: center 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Section 6 */
+.about-section-6{
+    background-image: url('../../Images/AboutUs/about-5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.about-section-6::after{
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-color: #00000038;
+}
+/* Section 7 */
+.temporary, .permanent, .direct{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.temporary::after, .permanent::after, .direct::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    content: '';
+    border-radius: 25px;
+    background:linear-gradient(0deg, #0000009f 5%, #00000000 50% )
+}
+.temporary:hover::after, .permanent:hover::after, .direct:hover::after {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    content: '';
+    border-radius: 25px;
+    background:linear-gradient(45deg, #0000009f 5%, #00000090 50% )
+}
+
+.temporary{
+    background-image: url('../../Images/AboutUs/temporary.jpg');
+}
+.permanent{
+    background-image: url('../../Images/AboutUs/permanent.jpg');
+}
+.direct{
+    background-image: url('../../Images/AboutUs/direct.jpg');
+}
+/* Section 8 */
+.about-section-8{
+    background-image: url('../../Images/AboutUs/about-7.jpg');
+    background-position: left 35%;
+}
+
+
 @media (max-width: 1000px) {
+    /* Home */
+    /* Section 1 */
+    .home-section-1{
+        background-position: 30% bottom;
+        background-image: url('../../Images/Home/home-1-mobile.jpg');
+    }
+    .section-1-inner-content{
+        max-width: 94vw;
+        margin:40vh auto 3vh auto;
+    }
+    /* Section 3 */
     .home-section-3-mobile{
         display: flex;
         flex-direction: column;
     }
     .video-background{
         position: relative;
-        height: 65vh;
+        height: 50vh;
         width: 94vw;
         border-radius: 25px;
         margin-inline: auto;
@@ -65,6 +171,10 @@
     .home-section3{
         background-color: #00000000;
         text-align: center;
+    }
+    /* Section 7 */
+    .last-section{
+        min-height: 65vh;
     }
 }
   

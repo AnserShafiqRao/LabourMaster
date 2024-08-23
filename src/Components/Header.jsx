@@ -33,9 +33,10 @@ export default function Header() {
     }
     setLastScrollY(window.scrollY);
     if (window.scrollY > 100) {
+
       const myHeader = document.getElementById('mainHeader');
       myHeader.style.boxShadow = '0px 0px 10px #041132';
-  } else if(window.scrollY === 0 ){
+  } else if(window.scrollY <= 100 ){
       const myHeader = document.getElementById('mainHeader');
       myHeader.style.boxShadow = '0px 0px 6px #041132';
   }
@@ -100,7 +101,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      <DisclosurePanel className="lg:hidden">
+      <DisclosurePanel className="lg:hidden h-[100vh] w-full">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
