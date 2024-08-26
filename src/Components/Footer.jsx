@@ -23,10 +23,11 @@ const Footer = () => {
         <div className=' lg:w-[20%] lg:px-4'> 
             <h2 className='footer-heading text-[5.5vw] lg:text-[1.6vw]'>Quick Links</h2>
             <div className='flex flex-col ml-1 lg:ml-2'>
+            <Link className='my-1 w-fit footer-menu ' to={'/'}>Home</Link>
                 <Link className='my-1 w-fit footer-menu ' to={'/about-us/'}>About Us</Link>
                 <Link className='my-1 w-fit footer-menu ' to={'/job-seekers/'}>Job Seekers</Link>
                 <Link className='my-1 w-fit footer-menu ' to={'/employers/'}>Employers</Link>
-                <Link className='my-1 w-fit footer-menu ' to={'/our-services/'}>Our Services</Link>
+                {/* <Link className='my-1 w-fit footer-menu ' to={'/our-services/'}>Our Services</Link> */}
                 <Link className='my-1 w-fit footer-menu ' to={'/contact-us/'}>Contact Us</Link>
             </div>
         </div>
@@ -35,7 +36,7 @@ const Footer = () => {
             <h4 className='text-slate-50 mt-2 text-[3.5vw] lg:text-[1vw] tracking-[0.5px]'>Let us know how we can assist you, and we’ll respond at our earliest convenience.</h4>
             <Link to={'/contact-us/'}  className='footer-contact-btn mt-2'>To Get Job Options</Link>
             <h4 className='text-[3.8vw] lg:text-[1.3vw] text-[var(--golden-color)] my-1 lg:my-2 ml-2 italic font-[600]'>OR</h4>
-            <Link to={'/contact-us/'}  className='footer-contact-btn'>To Get Employees</Link>
+            <Link to={'/contact-us/'}  className='footer-contact-btn'>To Hire Candidates</Link>
         </div>
         <div className=' lg:w-[24%] lg:px-4 flex flex-col'> 
             <h2 className='footer-heading text-[5.5vw] lg:text-[1.6vw]'>To Reach Us</h2>

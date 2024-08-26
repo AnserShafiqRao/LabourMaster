@@ -78,16 +78,16 @@ const Home = () => {
       {/* Section 1 */}
       <div className='flex flex-col justify-center lg:items-start w-full home-section-1  lg:min-h-[90vh]'>
         <div className='flex flex-col items-start section-1-inner-content'>
-          <h3 className=' text-[6vw] leading-7 mb-2 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] lg:leading-9'>
+          <h3 className=' text-[6vw]  mb-2 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] '>
             Exploring to <span className='text-[var(--golden-color)] underline italic tracking-[1px]'>get best candidate</span> options? 
           </h3>
-          <h4 className='text-[4.5vw] capitalize tracking-wider leading-5 mb-4 lg:mb-auto lg:leading-auto lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Let's work together to strengthen your team and drive success.</h4>
+          <h4 className='text-[4.5vw] capitalize tracking-wider mb-4 lg:mb-auto  lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Let's work together to strengthen your team and drive success.</h4>
           <button className='py-[1%] px-4  lg:py-2 lg:px-6 lg:mt-[3vh] font-[600] rounded-xl tracking-[0.5px] bg-[var(--golden-color)] hover:bg-[var(--blackish-golden-color)] hover:text-[var(--golden-color)] hover-effect'>Explore Candidates</button>
           
-          <h3 className='text-[6vw] leading-7 mb-2 mt-4 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] lg:leading-9'>
+          <h3 className='text-[6vw] mb-2 mt-4 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] '>
             Looking to <span className='text-[var(--golden-color)] underline italic tracking-[1px]'>get best job</span> options to get highlight? 
           </h3>
-          <h4 className='text-[4.5vw] capitalize tracking-wider leading-5 mb-4 lg:mb-auto lg:leading-auto lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Explore the latest and finest job openings across Canada by staying connected with us.</h4>
+          <h4 className='text-[4.5vw] capitalize tracking-wider mb-4 lg:mb-auto lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Explore the latest and finest job openings across Canada by staying connected with us.</h4>
           <button className='py-[1%] px-4 lg:py-2 lg:px-6 lg:mt-[3vh] font-[600] rounded-xl tracking-[0.5px] bg-[var(--golden-color)] hover:bg-[var(--blackish-golden-color)] hover:text-[var(--golden-color)] hover-effect'>Searching for Jobs</button>
         </div>
       </div>
@@ -97,7 +97,7 @@ const Home = () => {
         <div className='home-section2-inner flex flex-col-reverse lg:flex-row px-[5vw] justify-evenly items-center'>
           <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[50%] lg:pr-[5%]'>
               <h2 className='text-[4vw] lg:text-[1.1vw] font-[600] capitalize'>What we provides?</h2>
-              <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-golden-color)]'>Matching Top Talent with Leading Employers for Optimal Success</h4>
+              <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] font-[600] capitalize tracking-[0.75px] text-[var(--dark-golden-color)]'>Matching Top Talent with Leading Employers for Optimal Success</h4>
               <p className='text-[4.3vw] text-[var(--dark-black-color)] lg:text-[1.1vw]'>Discover your ideal employer, perfectly aligned with your skills and expertise. At Labour Master Solutions, we leverage our professional know-how to help businesses recruit with precision. Our advanced search and selection tools enable us to swiftly identify and secure top talent, ensuring a perfect fit for your business needs. The quality of our candidates is unparalleled. We guarantee our ability to identify and deliver the finest talent available in the market today, helping your business thrive with the best in the industry.</p> 
           </div>
           <div className='max-w-[100%] min-h-[45vh] lg:max-w-[40%] block p-0 shadow-lg rounded-3xl'>
@@ -116,27 +116,27 @@ const Home = () => {
 
         <div className='home-section3  flex flex-col min-h-auto items-center justify-end lg:w-full lg:min-h-[80vh] mx-auto shadow-md'>
           
-          <h2 className='text-[7vw] mb-1 lg:text-[2.2vw] lg:leading-7 lg:font-[600] capitalize tracking-[1px] text-[var(--golden-color)] lg:w-full lg:text-center lg:mb-6'>What We Delivers?</h2>
+          <h2 className='text-[7vw] mb-1 lg:text-[2.2vw] lg:font-[600] capitalize tracking-[1px] text-[var(--golden-color)] lg:w-full lg:text-center lg:mb-6'>What We Delivers?</h2>
           
           <div className='flex flex-col lg:flex-row w-[90%]'>
             
             <div className='flex flex-col w-full py-2 lg:w-[25%] lg:px-6 lg:min-h-[30vh]'>
-              <h3 className='text-[5vw] text-[var(--dark-black-color)] lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] lg:leading-9'>Tailored Recruitment<br className='hideOnMobile'/> Solutions</h3>
+              <h3 className='text-[5vw] text-[var(--dark-black-color)] leading-auto 2xl:leading-auto lg:leading-7 lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] '>Tailored Recruitment<br className='hideOnMobile'/> Solutions</h3>
               <p className='text-[4.3vw] text-[var(--dark-black-color)]   lg:text-[var(--white-color)] lg:text-[1.0vw]'>We collaborate closely with you to design recruitment strategies that align perfectly with your business objectives.</p>
             </div>
             
             <div className='flex flex-col w-full py-2  lg:w-[25%] lg:px-6 lg:min-h-[30vh]'>
-              <h3 className='text-[5vw] text-[var(--dark-black-color)] lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] lg:leading-9'>Recruitment and <br className='hideOnMobile'/>Screening</h3>
+              <h3 className='text-[5vw] text-[var(--dark-black-color)] leading-auto 2xl:leading-auto lg:leading-7 lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] '>Recruitment and <br className='hideOnMobile'/>Screening</h3>
               <p className='text-[4.3vw] text-[var(--dark-black-color)]   lg:text-[var(--white-color)] lg:text-[1.0vw]'>We expedite the recruitment process by sourcing and screening candidates from our broad network to match your business needs.</p>
             </div>
             
             <div className='flex flex-col w-full py-2 lg:w-[25%] lg:px-6 lg:min-h-[30vh]'>
-              <h3 className='text-[5vw] text-[var(--dark-black-color)] lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] lg:leading-9'>Effective Talent <br className='hideOnMobile'/>Placement</h3>
+              <h3 className='text-[5vw] text-[var(--dark-black-color)] leading-auto 2xl:leading-auto lg:leading-7 lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] '>Effective Talent <br className='hideOnMobile'/>Placement</h3>
               <p className='text-[4.3vw] text-[var(--dark-black-color)]   lg:text-[var(--white-color)] lg:text-[1.0vw]'>By providing a pre-vetted shortlist and working quickly to fill vacancies, we help sustain your productivity, even during the busiest periods.</p>
             </div>
             
             <div className='flex flex-col w-full py-2 lg:w-[25%] lg:px-6 lg:min-h-[30vh]'>
-              <h3 className='text-[5vw] text-[var(--dark-black-color)] lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] lg:leading-9'>Workplace Readiness <br className='hideOnMobile'/>Training</h3>
+              <h3 className='text-[5vw] text-[var(--dark-black-color)] lg:text-[var(--white-color)] capitalize tracking-normal font-[600] lg:text-[1.8vw] '>Workplace Readiness <br className='hideOnMobile'/>Training</h3>
               <p className='text-[4.3vw] text-[var(--dark-black-color)]   lg:text-[var(--white-color)] lg:text-[1.0vw]'>We ensure that new hires are fully trained and ready for their roles from the start, with a priority on maintaining a safety-first mindset.</p>
             </div>
           </div>
@@ -237,10 +237,10 @@ const Home = () => {
       <div className='flex w-full home-section-7 last-section'>
 
           <div className='flex flex-col justify-center items-start text-left z-[1] w-[80%] mx-auto px-[2%] lg:px-[10%]'>
-              <h3 className='text-[7vw] lg:text-[2vw] leading-7 font-[700] capitalize tracking-[0.75px] text-[var(--white-color)] mb-4'>
+              <h3 className='text-[7vw] lg:text-[2vw] font-[700] capitalize tracking-[0.75px] text-[var(--white-color)] mb-4'>
               We are dedicated to facilitating clients' success in achieving their goals.
               </h3>
-              <p className='text-[5.0vw] lg:text-[1.3vw] leading-7 font-[500] capitalize tracking-[0.75px] text-[var(--white-color)] mb-4'>Whether you’re pursuing a new job or seeking the perfect candidate, we provide the expertise to help you thrive.
+              <p className='text-[5.0vw] lg:text-[1.3vw] font-[500] capitalize tracking-[0.75px] text-[var(--white-color)] mb-4'>Whether you’re pursuing a new job or seeking the perfect candidate, we provide the expertise to help you thrive.
               </p>
               <button className=' px-6 py-2 border-2 font-[600] rounded-xl tracking-[1px] text-[var(--white-color)] bg-transparent hover-effect'><Link to={'/contact-us/'}>Contact Us</Link></button>
           </div>

@@ -40,8 +40,8 @@ export default function Popup({children, bgImg, Roles, Description}) {
 
                     <h3  className='lg:text-[1.3vw] lg:mt-6 lg:mb-2 capitalize'>What do you like to avail?</h3>
                     <div className='popup-child-btns'>
-                        <Link className='popup-child-btn' to='/job-seekers/job-application'>Job Options </Link>
-                        <Link className='popup-child-btn' to='/employers/employees-required'>Skilled Candidates</Link>
+                        <Link className='popup-child-btn' to='/job-seekers/job-application'>Apply For Job</Link>
+                        <Link className='popup-child-btn' to='/employers/employees-required'>Hire A Candidate</Link>
                     </div>
 
                 </div>

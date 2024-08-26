@@ -49,14 +49,14 @@ const About = () => {
       </div>
 
       {/* Section 2 */}
-      <div className='flex flex-col text-center self-center justify-center lg:min-h-[35vh] lg:w-[75%]'>
+      <div className='flex flex-col text-start lg:text-center self-center justify-center px-[5vw] my-[4vh] lg:my-auto lg:min-h-[35vh] lg:w-[75%]'>
           <h4 className='text-[4vw] lg:text-[1.1vw] font-[600] capitalize'>Why labour master solutions?</h4>
           <h3 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-golden-color)]' >Your Trusted Partner in Human Resource Excellence</h3>
           <p className='text-[4.3vw] text-[var(--dark-black-color)] lg:text-[1.1vw]'>Labour Master Solutions is committed to delivering top-notch staffing services. With a strategic approach, we quickly bring the best candidates to your business, offering experienced and dedicated temporary staff tailored to your unique needs.</p>
       </div>
 
       {/* Section 3 */}
-      <div className='flex flex-col justify-center lg:items-start lg:my-2 w-full'>
+      <div className='flex flex-col justify-center my-4 lg:items-start lg:my-2 w-full'>
         <div className='flex flex-col-reverse lg:flex-row px-[5vw] justify-evenly items-center'>
           <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[50%] lg:pr-[5%]'>
               <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-black-color)]'>
@@ -72,7 +72,7 @@ const About = () => {
       </div>
 
       {/* Section 4 */}
-      <div className='flex flex-col justify-center lg:items-start lg:my-2 w-full'>
+      <div className='flex flex-col justify-center  my-8 lg:items-start lg:my-2 w-full'>
         <div className='flex flex-col-reverse lg:flex-row-reverse px-[5vw] justify-evenly items-center'>
           <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[50%] lg:pr-[5%]'>
               <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-black-color)]'>
@@ -87,7 +87,7 @@ const About = () => {
         </div>
       </div>
       {/* Section 5 */}
-      <div className='flex flex-col justify-center lg:items-start lg:my-2 w-full'>
+      <div className='flex flex-col justify-center my-8 lg:items-start lg:my-2 w-full'>
         <div className='flex flex-col-reverse lg:flex-row px-[5vw] justify-evenly items-center'>
           <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[50%] lg:pr-[5%]'>
               <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-black-color)]'>
@@ -103,12 +103,12 @@ const About = () => {
       </div>
 
       {/* Section 6 */}
-      <div className='about-section-6 flex flex-row items-end justify-center lg:min-h-[70vh] lg:px-[13%]'>
-        <div className='block p-0 w-[30%] z-10'>
-            <img className='w-full h-[45vh] object-contain lg:h-[65vh] rounded-3xl' 
+      <div className='about-section-6 flex flex-col lg:flex-row items-end justify-center lg:min-h-[70vh] py-[14%] px-[7%] lg:py-0 lg:px-[13%]'>
+        <div className='block p-0 w-full lg:w-[30%] z-10'>
+            <img className='w-full h-[55vh] object-contain lg:h-[65vh] rounded-3xl' 
             src={Image4} alt='Labour Master Matching Top Talent' />
         </div>
-        <div className='flex flex-col justify-center w-[70%] z-10 lg:pl-[5%] lg:min-h-[70vh]'>
+        <div className='flex flex-col justify-center w-full lg:w-[70%] z-10 lg:pl-[5%] lg:min-h-[70vh]'>
           <h4 className='text-[4vw] lg:text-[1.1vw] font-[600] text-[var(--white-color)] capitalize'>Our Commitment To Excellence</h4>
           <h3 className='mb-2 text-[7vw] lg:text-[1.8vw] lg:leading-7 font-[600] capitalize tracking-wider text-[var(--golden-color)]' >What Sets Us Apart</h3>
           <div className=''>
@@ -123,15 +123,16 @@ const About = () => {
       {/* Section 7 */}
       <div className='flex flex-col justify-center items-center about-section-7 lg:min-h-[70vh] w-[85%] mx-auto'>
         <h3 className='text-[7vw] lg:text-[2vw] leading-7 font-[700] capitalize tracking-[0.75px] text-[var(--dark-golden-color)] mb-6'>Placement types we provide</h3>
-        <div className='w-full grid justify-center lg:grid-cols-[1fr,1fr,1fr]'>
+        <div className='w-full grid justify-center grid-cols-1 lg:grid-cols-[1fr,1fr,1fr]'>
           {PlacementTypes.map((placement, index) => (
             <div 
               key={index} 
               className={`group mx-[4%] flex flex-col items-start justify-end hover:pb-0 hover:justify-center
-              lg:pl-[6%] lg:pr-[3%] lg:pb-[6%] lg:min-h-[37vh] ${placement.bg_Class}`}
+                pl-[8%] pr-[5%] pb-[8%] my-4 lg:my-0
+              lg:pl-[6%] lg:pr-[3%] lg:pb-[6%] min-h-[35vh] lg:min-h-[37vh] ${placement.bg_Class}`}
             >
-              <h3 className='z-10 lg:text-[1.5vw] font-[600] text-[var(--golden-color)] '>{placement.name}</h3>
-              <h3 className='lg:text-[1vw] text-[var(--white-color)]  hidden z-10 group-hover:block '>{placement.description}</h3>
+              <h3 className='z-10 text-[6vw] lg:text-[1.5vw] font-[600] text-[var(--golden-color)] '>{placement.name}</h3>
+              <h3 className='text-[5vw] lg:text-[1vw] text-[var(--white-color)]  hidden z-10 group-hover:block '>{placement.description}</h3>
             </div>
           ))}
         </div>
@@ -145,10 +146,10 @@ const About = () => {
             Dedicated to Aligning Your Goals with Exceptional Talent Placement.
             </h3>
             <p className='text-[5.0vw] lg:text-[1.3vw] leading-7 font-[500] capitalize tracking-[0.75px] text-[var(--white-color)] mb-4'>Whether you're making a career move or searching for the perfect job fit, we offer the expert guidance and support you need to excel and achieve your career goals.</p>
-            <div className='flex items-center'>
-            <button className=' px-6 py-2 border-2 font-[600] rounded-xl tracking-[1px] text-[var(--white-color)] bg-transparent hover-effect'><Link to={'/contact-us/'}>Looking For Job Options?</Link></button>
-            <h3 className='text-[5.0vw] lg:text-[2vw] text-[var(--golden-color)] italic font-[800] mx-6'>OR</h3>
-            <button className=' px-6 py-2 border-2 font-[600] rounded-xl tracking-[1px] text-[var(--white-color)] bg-transparent hover-effect'><Link to={'/contact-us/'}>Searching For Candidates?</Link></button>
+            <div className='flex items-center flex-col lg:flex-row'>
+              <button className=' px-6 py-2 border-2 font-[600] rounded-xl tracking-[1px] text-[var(--white-color)] bg-transparent hover-effect'><Link to={'/contact-us/'}>Looking For Job Options?</Link></button>
+              <h3 className='text-[7.0vw] lg:text-[2vw] text-[var(--golden-color)] italic font-[800] mx-6'>OR</h3>
+              <button className=' px-6 py-2 border-2 font-[600] rounded-xl tracking-[1px] text-[var(--white-color)] bg-transparent hover-effect'><Link to={'/contact-us/'}>Searching For Candidates?</Link></button>
             </div>
             
             

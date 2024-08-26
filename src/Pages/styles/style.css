@@ -126,7 +126,7 @@
     width: 100%;
     content: '';
     border-radius: 25px;
-    background:linear-gradient(45deg, #0000009f 5%, #00000090 50% )
+    background:linear-gradient(45deg, #0000009f 5%, #00000090 50% );
 }
 
 .temporary{
@@ -143,7 +143,26 @@
     background-image: url('../../Images/AboutUs/about-7.jpg');
     background-position: left 35%;
 }
+/* Services */
+/* Section 1 */
+.services-section-1{
+    background-image: url('../../Images/Services/services-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
+}
+.services-section-1::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: '';
+
+    background: linear-gradient(45deg, #dfc4852f 50%, #00000007 100% );
+}
 
 @media (max-width: 1000px) {
     /* Home */
@@ -175,6 +194,18 @@
     /* Section 7 */
     .last-section{
         min-height: 65vh;
+        padding-block: 10vh;
+    }
+    /* About us */
+    /* Section 1 */
+    .about-section-1
+    {
+        background-position: 72% bottom;
+    }
+    /* Section 6 */
+    .about-section-6{
+        background-position: center;
+        background-image: url('../../Images/AboutUs/about-5-mobile.png');
     }
 }
   
