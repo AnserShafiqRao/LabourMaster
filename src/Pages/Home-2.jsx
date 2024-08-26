@@ -1,5 +1,8 @@
 import React from 'react'
 import './styles/style.css'
+import img1 from '../Images/Home/home-1.jpg';
+
+
 import Image1 from '../Images/Home/home-2.jpg';
 import Video1 from '../Images/Home/home-video.mp4';
 import Video1_Mobile from '../Images/Home/home-video-mobile.mp4';
@@ -72,38 +75,42 @@ const industryList = [
 
 
 
-const Home = () => {
+const Home2 = () => {
   return (
-    <div className='w-full flex flex-col'>
+    <div className='w-[90%] mx-auto flex flex-col'>
       {/* Section 1 */}
-      <div className='flex flex-col justify-center lg:items-start w-full home-section-1  lg:min-h-[90vh]'>
-        <div className='flex flex-col items-start section-1-inner-content'>
-          <h3 className=' text-[6vw]  mb-2 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] '>
-            Exploring to <span className='text-[var(--golden-color)] underline italic tracking-[1px]'>get best candidate</span> options? 
-          </h3>
-          <h4 className='text-[4.5vw] capitalize tracking-wider mb-4 lg:mb-auto  lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Let's work together to strengthen your team and drive success.</h4>
-          <button className='py-[1%] px-4  lg:py-2 lg:px-6 lg:mt-[3vh] font-[600] rounded-xl tracking-[0.5px] bg-[var(--golden-color)] hover:bg-[var(--blackish-golden-color)] hover:text-[var(--golden-color)] hover-effect'>Explore Candidates</button>
-          
-          <h3 className='text-[6vw] mb-2 mt-4 lg:mb-auto lg:text-[1.7vw] lg:font-[600] capitalize lg:tracking-[0.5px] text-[var(--white-color)] '>
-            Looking to <span className='text-[var(--golden-color)] underline italic tracking-[1px]'>get best job</span> options to get highlight? 
-          </h3>
-          <h4 className='text-[4.5vw] capitalize tracking-wider mb-4 lg:mb-auto lg:text-[1.2vw] lg:font-[400] text-[var(--white-color)]'>Explore the latest and finest job openings across Canada by staying connected with us.</h4>
-          <button className='py-[1%] px-4 lg:py-2 lg:px-6 lg:mt-[3vh] font-[600] rounded-xl tracking-[0.5px] bg-[var(--golden-color)] hover:bg-[var(--blackish-golden-color)] hover:text-[var(--golden-color)] hover-effect'>Searching for Jobs</button>
+      <div className='flex flex-row justify-center lg:min-h-[80vh] lg:items-center w-full'>
+        <div className='flex flex-col justify-center w-[50%] max-w-[50%] mr-10'>
+            <h5 className='bg-neutral-700 w-fit tracking-wide px-4 py-1 rounded-[20px] text-stone-50 text-[0.8rem] lg:mb-3'>Save on Payroll, Not on Quality</h5>
+            <h3 className='text-[2.7vw] font-[700] tracking-wide capitalize '>Pre-Trained virtual assitants ready to fuel your digital marketing agency's growth</h3>
+            <div className='flex flex-row mt-6'>
+                <button className='bg-[var(--dark-golden-color)] rounded-[30px] px-8 py-4 text-[1.3vw] font-[600] capitalize text-stone-50 tracking-wide'>Agency scale strategy session</button>
+                <button className='ml-6 text-[1.4vw] font-[700] capitalize underline  tracking-wide'>Explore roles</button>
+            </div>
+            
+        </div>
+
+        <div className='w-[50%] overflow-hidden'>   
+            <img src={img1} alt='labour master' className='rounded-[20px]'/>
         </div>
       </div>
 
       {/* Section 2 */}
-      <div className='home-section-2 flex flex-col justify-center my-8 lg:my-auto lg:items-start w-full lg:min-h-[80vh]'>
-        <div className='home-section2-inner flex flex-col-reverse lg:flex-row px-[5vw] justify-evenly items-center'>
-          <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[50%] lg:pr-[5%]'>
-              <h2 className='text-[4vw] lg:text-[1.1vw] font-[600] capitalize'>What we provides?</h2>
+      <div className='home-section-2 flex flex-col justify-start items-start my-8 lg:mb-10 lg:items-start w-full lg:min-h-[80vh]'>
+        <div className='home-section2-inner flex flex-col-reverse lg:flex-row justify-evenly items-center'>
+          
+          <div className='max-w-[100%] min-h-[45vh] lg:max-w-[35%] lg:w-[35%] block p-0 shadow-lg rounded-3xl'>
+              <img className='w-full object-cover lg:h-[84vh] rounded-3xl' 
+              src={Image1} alt='Labour Master Matching Top Talent' />
+          </div>
+          
+          <div className='max-w-[95%] mt-[5%] lg:mt-[0%] p-auto lg:max-w-[65%]  lg:w-[65%] lg:px-[5%]'>
+              <h2 className='lg:text-[2.3vw] font-[700] tracking-wide'>Tired of the Hiring Gamble?</h2>
               <h4 className='mb-2 text-[7vw] lg:text-[1.8vw] font-[600] capitalize tracking-[0.75px] text-[var(--dark-golden-color)]'>Matching Top Talent with Leading Employers for Optimal Success</h4>
               <p className='text-[4.3vw] text-[var(--dark-black-color)] lg:text-[1.1vw]'>Discover your ideal employer, perfectly aligned with your skills and expertise. At Labour Master Solutions, we leverage our professional know-how to help businesses recruit with precision. Our advanced search and selection tools enable us to swiftly identify and secure top talent, ensuring a perfect fit for your business needs. The quality of our candidates is unparalleled. We guarantee our ability to identify and deliver the finest talent available in the market today, helping your business thrive with the best in the industry.</p> 
           </div>
-          <div className='max-w-[100%] min-h-[45vh] lg:max-w-[40%] block p-0 shadow-lg rounded-3xl'>
-              <img className='w-full h-[45vh] object-cover lg:h-auto rounded-3xl' 
-              src={Image1} alt='Labour Master Matching Top Talent' />
-          </div>
+
+
         </div>
       </div>
 
@@ -249,4 +256,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home2

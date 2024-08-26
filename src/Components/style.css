@@ -4,13 +4,37 @@
   top: 0;
   z-index: 1000;
   display: flex;
-  width: 100%;
   flex-direction: column;
   transition: top 0.3s ease-in-out; /* Smooth transition for header visibility */
 }
+.underline-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 7px;
+  overflow: hidden;
+}
+
+.underline-button::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-golden-color);
+  transition: width 0.4s ease-in-out;
+}
+
+.underline-button:hover::before {
+  width: 100%;
+}
 
 .active-background {
-  background-color: #bc9740;
+  border-bottom:2px solid #bc9740;
   width: fit-content;
 }
 .desktop-menu{
@@ -36,7 +60,6 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 64px);
-  background-color: #1c1c1c;
   z-index: 999;
   overflow-y: auto;
 }
