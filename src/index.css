@@ -8,6 +8,8 @@
   --montserrat-text-font: 'Montserrat', sans-serif;
   --exo-2-text-font: 'Exo 2', sans-serif;
   --open-sans-text-font: "Open Sans", sans-serif;
+  --josefin-sans-text-font: "Josefin Sans", sans-serif;
+
   --golden-color: #E3C86A;
   --dark-golden-color: #B98831;
   --blackish-golden-color: #2b281b;
@@ -16,7 +18,7 @@
 }
 
 *{
-  font-family: var(--open-sans-text-font);
+  font-family: var(--josefin-sans-text-font);
 }
 body{
   background-color: #fffdf9;

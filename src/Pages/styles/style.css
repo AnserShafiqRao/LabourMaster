@@ -24,9 +24,8 @@
 /* Section-3 */
 .video-background-container {
     position: relative;
-    width: 98%;
+    width: 100%;
     height: 100%;
-    border-radius: 25px;
     margin-inline: auto !important; 
     overflow:hidden;
     margin-bottom: 4%;
@@ -51,6 +50,27 @@
 /* Section 4 */
 .card-background{
     background:linear-gradient(45deg, #c29e3b22, #e2b44d22, #f0c24d22, #f2cf5922, #c29f3b22);;
+}
+/* Section 6 */
+.industries-box{
+    background-image: url('../../Images/Home/industries-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 40px;
+}
+.industries-box::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    content: '';
+    background-color: #00000072;
+}
+.card-background{
+    background-color: #b9873123;
 }
 
 /* Section 7 */

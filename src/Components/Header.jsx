@@ -13,7 +13,7 @@ import { FaXTwitter as X } from "react-icons/fa6";
 import { FaLinkedin as LinkedIn } from "react-icons/fa";
 
 const navigation = [
-  { name: 'How it works', href: '/#section-6', current: false },
+  { name: 'How it works', href: '/#how-it-works', current: false },
   { name: 'Careers', href: '/about-us/', current: false },
   { name: 'Our Roles', href: '/job-seekers/', current: false },
 ];
@@ -40,12 +40,14 @@ export default function Header() {
       setShowHeader(true);
     }
     // setLastScrollY(window.scrollY);
-    if (window.scrollY > 50) {
+    if (window.scrollY > 70) {
       const myHeader = document.getElementById('mainHeader');
-      myHeader.style.backgroundColor = '#fcfcfc';
-  } else if(window.scrollY <= 50 ){
+      myHeader.style.backgroundColor = '#fffdf9';
+      myHeader.style.boxShadow=  ' 0px 3px 5px #dbdbdb';
+  } else if(window.scrollY <= 70 ){
       const myHeader = document.getElementById('mainHeader');
       myHeader.style.backgroundColor = '#00000000';
+      myHeader.style.boxShadow=  ' none';
   }
   };
 
@@ -64,7 +66,7 @@ export default function Header() {
   return (
 
     <>
-    <div className='flex justify-between w-[90%] mx-auto my-1'>
+    <div className='flex justify-between w-[100%] px-[5%] mx-auto my-1'>
       <div className='flex flex-row'>
         <Fb className='text-[1.2vw] lg:mx-[0.5vw] cursor-pointer text-stone-700 hover:text-[var(--dark-golden-color)]'/>
         <Insta className='text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
@@ -80,10 +82,10 @@ export default function Header() {
 
     </div>
 
-    <Disclosure as="nav" className={`bg-transparent w-[90%] mx-auto shadow-none header sticky-header ${showHeader ? 'visible' : 'hidden'}`}>
+    <Disclosure  id="mainHeader" as="nav" className={`bg-transparent w-[100%] px-[5%] mx-auto shadow-none header sticky-header ${showHeader ? 'visible' : 'hidden'}`}>
       <div
         className={`w-full py-4 px-0 lg:px-0 lg:py-4 `}
-        id="mainHeader"
+        
       >
 
         <div className="relative flex h-16 items-center justify-center">
@@ -120,7 +122,7 @@ export default function Header() {
                       ' px-2 mx-2 py-2 font-medium text-[1.05vw] tracking-wider uppercase font-[500] text-black',)}>
                           {item.name}
                   </HashLink>))}
-                  <button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >Agency scale strategy call</button>
+                  <button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >To Hire the Candidate</button>
                 </div>
                 </div>
               </div>
