@@ -94,6 +94,11 @@
     background-color: #2f2f2fa4;
 }
 
+.drop-downs{
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+
 /* About Us */
 /* Section 1 */
 .about-section-1{

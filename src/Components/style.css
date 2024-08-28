@@ -44,7 +44,7 @@
   margin-inline: auto;
 }
 .mobile-menu-icon {
-  color: var(--golden-color);
+  color: var(--dark-golden-color);
 }
 
 .sticky-header.hidden {
@@ -59,7 +59,7 @@
   position: sticky;
   left: 0;
   width: 100%;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 95px);
   z-index: 999;
   overflow-y: auto;
 }
@@ -118,7 +118,7 @@
   
   .footer-social-icons {
     font-size: 2vw;
-    margin-left: 1vw;
+    margin-right: 1vw;
     color: var(--white-color);
     transition: transform 0.3s ease-in-out;
   }

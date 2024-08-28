@@ -50,7 +50,7 @@ const industryList = [
 
 const IndustriesDisplay = () => {
   return (
-    <>
+    <div id='our-industries'>
     <div className='video-background-container my-10 rounded-xl'>
         <video autoPlay muted loop className='video-background'>
           <source src={Video1} type='video/mp4' />
@@ -71,14 +71,14 @@ const IndustriesDisplay = () => {
                     ))
                 }
                 </div>
-                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-[var(--dark-golden-color)] mt-8 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-[#8e7333] hover:scale-[1.015]'>Let's Hire a Candidate! <RightArrow  className='text-[3vw] p-2 ml-4 rounded-[50px] bg-[#b4a278]' /></button></Link>
+                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-[var(--dark-golden-color)] mt-8 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-[#8e7333] hover:scale-[1.015]'>Hire a Candidate! <RightArrow  className='text-[3vw] p-2 ml-4 rounded-[50px] bg-[#b4a278]' /></button></Link>
                 <h3 className='mx-[22%] my-4 text-center text-[1.1vw] text-[var(--white-color)]'>During this 100% free no-strings-attached agency scale strategy call we will go over how our pre-trained virtual assistants can save up to 50% in payroll costs while scaling your business.</h3>
                 <h3 className='mx-[22%] mb-4 text-center text-[1.1vw] text-[var(--white-color)]'>It’s free … you’ve got nothing to lose and everything to gain!</h3>
             
             </div>  
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

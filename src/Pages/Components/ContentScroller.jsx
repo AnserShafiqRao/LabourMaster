@@ -7,88 +7,88 @@ const ContentScroller = () => {
   return (
     
     <>
-    <div class="marquee1">
-    <div class="marquee1__group anime1" >
+    <div className="marquee1">
+    <div className="marquee1__group anime1" >
       <h4 href="/">  
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
       
 
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
      
     </div>
-  <div class="marquee1__group anime1" aria-hidden="true">
+  <div className="marquee1__group anime1" aria-hidden="true">
        <h4 href="/">  
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={BlackIcon} alt='SLider Icon' class="companyImg" />
+      <img src={BlackIcon} alt='SLider Icon' className="companyImg" />
       
     </div>
     </div>
 
 
-    <div class="marquee2">
-    <div class="marquee2__group anime2" >
+    <div className="marquee2">
+    <div className="marquee2__group anime2" >
       <h4 href="/">  
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
       
 
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
      
     </div>
 
-  <div class="marquee2__group anime2" aria-hidden="true">
+  <div className="marquee2__group anime2" aria-hidden="true">
        <h4 href="/">  
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
       
       
       <h4 href="/">
-        <span class="afterColon">Scale your marketing agency</span>
+        <span className="afterColon">Scale your marketing agency</span>
       </h4>
-      <img src={WhiteIcon} alt='SLider Icon' class="companyImg" />
+      <img src={WhiteIcon} alt='SLider Icon' className="companyImg" />
       
     </div></div>
     </>

@@ -24,7 +24,7 @@ const ProcessDisplay = ( {TargetData} ) =>{
             <div className='w-full flex flex-col justify-center'>
                 {TargetData.map((content, index) =>(
                     (content.step === 'Last'? (
-                        <div className='flex flex-col justify-center items-center'>
+                        <div key={index} className='flex flex-col justify-center items-center'>
                             <div key={index} className={`grid grid-cols-[25%_70%_5%] w-[100%] bg-stone-900  hover:${content.type === 'special' ? 'bg-[var(--golden-color)]': 'bg-[#eddbbd] hover:text-stone-900' } text-[var(--white-color)] rounded-[10px] p-6`}>
                                 <div className='flex justify-start items-center pl-12'>
                                     <h2 className='lg:text-[2.2vw] mr-4'>{React.createElement(content.icon)}</h2>
@@ -36,7 +36,7 @@ const ProcessDisplay = ( {TargetData} ) =>{
                             </div>
                         </div>
                     ): (
-                        <div className='flex flex-col justify-center items-center'>
+                        <div key={index} className='flex flex-col justify-center items-center'>
                             <div key={index} className={`grid grid-cols-[25%_70%_5%] w-[100%] bg-stone-900 ${content.type === 'special' ? 'hover:bg-[var(--golden-color)]': 'hover:bg-[#eddbbd]'}  hover:text-stone-900 text-[var(--white-color)] rounded-[10px] p-6`}>
                                 <div className='flex justify-start items-center pl-12'>
                                     <h2 className='lg:text-[2.2vw] mr-4'>{React.createElement(content.icon)}</h2>
