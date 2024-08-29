@@ -7,7 +7,7 @@ import './style.css';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FiPhoneCall as ContactUs} from "react-icons/fi";
-import { IoMailOpenOutline as EMailUs} from "react-icons/io5";
+// import { IoMailOpenOutline as EMailUs} from "react-icons/io5";
 import { FaFacebookSquare as Fb } from "react-icons/fa";
 import { FaInstagram as Insta } from "react-icons/fa6";
 import { FaLinkedin as LinkedIn } from "react-icons/fa";
@@ -74,9 +74,9 @@ export default function Header() {
       window.removeEventListener('scroll', controlHeader);
     };
   });
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [location]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
 
@@ -145,7 +145,7 @@ export default function Header() {
                     )
                   ))}
 
-                  <button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >Hire a Candidate</button>
+                  <Link to={'/hire-candidates-application/'}><button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >Hire a Candidate</button></Link>
                 </div>
                 </div>
               </div>
@@ -173,16 +173,6 @@ export default function Header() {
           {item.name}
         </DisclosureButton>
         ))}
-          <div className='flex flex-col justify-start'>
-            <h3 className='flex flex-row items-center text-[6vw] mb-4 text-stone-800 font-[600] tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><EMailUs className='mr-2 mt-[-5px] text-[8vw]' /><Link to={'mailto:info@labourmaster.ca'}>info@labourmaster.ca</Link></h3>
-            <h3 className='flex flex-row items-center text-[6vw] mb-4 text-stone-800 font-[600] tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><ContactUs className='mr-2 text-[7vw]'/> <Link to={'tel:+6475090006'}>(647) 509 0006</Link></h3>
-          </div>
-          <div className='flex flex-row items-center'>
-            <h3 className='text-[6vw] mr-4 text-stone-800'>Follow Us At: </h3>
-            <Fb className='text-[6vw] mr-4 cursor-pointer text-stone-800 hover:text-[var(--dark-golden-color)]'/>
-            <Insta className='text-[6vw] mr-4 cursor-pointer  text-stone-800 hover:text-[var(--dark-golden-color)]'/>
-            <LinkedIn className='text-[6vw] mr-4 cursor-pointer  text-stone-800 hover:text-[var(--dark-golden-color)]'/>
-          </div>
 
         </div>
         

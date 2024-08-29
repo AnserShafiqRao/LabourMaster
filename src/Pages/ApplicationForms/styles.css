@@ -1,0 +1,25 @@
+.altered-background{
+    background: url(../../Images/forms-bg.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+}
+/* .altered-background::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    content: '';
+    background-color: #0000004c;
+} */
+ @media (max-width: 1000px) {
+    .altered-background{
+        background: url('../../Images/forms-bg-mobile.png');
+        background-size: cover;
+        background-position: center;
+    }
+ }

@@ -18,7 +18,7 @@
 }
 
 *{
-  font-family: var(--josefin-sans-text-font);
+  font-family: var(--open-sans-text-font);
 }
 body{
   background-color: #fffdf9;

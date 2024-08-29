@@ -25,27 +25,28 @@
 .video-background-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin-inline: auto !important; 
     overflow:hidden;
     margin-bottom: 4%;
 }
   
 .video-background {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-position: center;
     object-fit: cover;
     z-index: -1;
 }
 .home-section3 {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.484); 
+    /* background-color: #0000007b;  */
     z-index: 1;
-    padding: 20px;
+    padding-top: 20px;
+    padding-inline: 10px;
 }
 /* Section 4 */
 .card-background{
@@ -185,7 +186,6 @@
     width: 100%;
     height: 100%;
     content: '';
-
     background: linear-gradient(45deg, #dfc4852f 50%, #00000007 100% );
 }
 
@@ -206,14 +206,13 @@
         flex-direction: column;
     }
     .video-background{
-        position: relative;
-        height: 50vh;
+        /* position: relative; */
+        /* height: 200vh; */
         width: 94vw;
         border-radius: 25px;
         margin-inline: auto;
     }
     .home-section3{
-        background-color: #00000000;
         text-align: center;
     }
     /* Section 7 */

@@ -16,6 +16,8 @@ import { TbDeviceComputerCamera as HP_3} from "react-icons/tb";
 import { TiTicket as HP_4} from "react-icons/ti";
 import { FaListCheck as HP_5} from "react-icons/fa6";
 import { GrCheckboxSelected as HP_6} from "react-icons/gr";
+import { FaArrowDownLong as DOWN} from "react-icons/fa6";
+
 
 const ProcessDisplay = ( {TargetData} ) =>{
     
@@ -25,29 +27,29 @@ const ProcessDisplay = ( {TargetData} ) =>{
                 {TargetData.map((content, index) =>(
                     (content.step === 'Last'? (
                         <div key={index} className='flex flex-col justify-center items-center'>
-                            <div key={index} className={`grid grid-cols-[25%_70%_5%] w-[100%] bg-stone-900  hover:${content.type === 'special' ? 'bg-[var(--golden-color)]': 'bg-[#eddbbd] hover:text-stone-900' } text-[var(--white-color)] rounded-[10px] p-6`}>
-                                <div className='flex justify-start items-center pl-12'>
-                                    <h2 className='lg:text-[2.2vw] mr-4'>{React.createElement(content.icon)}</h2>
-                                    <h2 className='text-[1.3vw] font-[700]' >{content.title}</h2>
+                            <div key={index} className={`grid  grid-cols-1  lg:grid-cols-[25%_70%_5%] w-[100%] bg-stone-900  hover:${content.type === 'special' ? 'bg-[var(--golden-color)]': 'bg-[#eddbbd] hover:text-stone-900' } text-[var(--white-color)] rounded-[10px] p-6`}>
+                                <div className='flex flex-col lg:flex-row just lg:justify-start items-center lg:pl-12'>
+                                    <h2 className='text-[15vw] lg:text-[2.2vw] lg:mr-4'>{React.createElement(content.icon)}</h2>
+                                    <h2 className='text-[5vw] lg:text-[1.3vw] font-[700]' >{content.title}</h2>
                                 </div>
-                                <div className='text-start pl-4'>
-                                    <h2 className='text-[1.3vw] font-[700]' >{content.description}</h2>
+                                <div className='text-center lg:text-start pl-4'>
+                                    <h2 className='text-[4.5vw] font-[500] lg:text-[1.3vw] lg:font-[700]' >{content.description}</h2>
                                 </div>
                             </div>
                         </div>
                     ): (
                         <div key={index} className='flex flex-col justify-center items-center'>
-                            <div key={index} className={`grid grid-cols-[25%_70%_5%] w-[100%] bg-stone-900 ${content.type === 'special' ? 'hover:bg-[var(--golden-color)]': 'hover:bg-[#eddbbd]'}  hover:text-stone-900 text-[var(--white-color)] rounded-[10px] p-6`}>
-                                <div className='flex justify-start items-center pl-12'>
-                                    <h2 className='lg:text-[2.2vw] mr-4'>{React.createElement(content.icon)}</h2>
-                                    <h2 className='text-[1.3vw] font-[700]' >{content.title}</h2>
+                            <div key={index} className={`grid grid-cols-1 lg:grid-cols-[25%_70%_5%] w-[100%] bg-stone-900 ${content.type === 'special' ? 'hover:bg-[var(--golden-color)]': 'hover:bg-[#eddbbd]'}  hover:text-stone-900 text-[var(--white-color)] rounded-[10px] p-6`}>
+                                <div className='flex flex-col lg:flex-row justify-start items-center lg:pl-12'>
+                                    <h2 className='text-[15vw] lg:text-[2.2vw] lg:mr-4'>{React.createElement(content.icon)}</h2>
+                                    <h2 className='text-[5vw] lg:text-[1.3vw] font-[700]' >{content.title}</h2>
                                 </div>
-                                <div className='text-start pl-4'>
-                                    <h2 className='text-[1.3vw] font-[700]' >{content.description}</h2>
+                                <div className='text-center lg:text-start pl-4'>
+                                    <h2 className='text-[4.5vw] font-[500] lg:text-[1.3vw] lg:font-[700]' >{content.description}</h2>
                                 </div>
                             </div>
                             <div className='my-2'>
-                                <h3 className='text-[1.7vw] font-[400]'>|</h3>
+                                <h3 className='text-[7vw] lg:text-[1.7vw] font-[400]'>{window.screen.width >1000 ? ( <span>|</span> ): ( <DOWN /> ) }</h3>
                             </div>
                         </div>
                     ))
@@ -144,15 +146,14 @@ const OurProcesses = () => {
 
     return (
     <div  id='how-it-works' className='flex flex-col justify-start items-start my-8 lg:mb-10 lg:items-start w-full lg:min-h-[80vh]'>
-        <h2 className='lg:text-[2.4vw] font-[700] tracking-normal '>How it Works</h2>
-        <h4 className='mb-2 text-[7vw] lg:text-[1.3vw] font-[400] tracking-normal text-[var(--black-color)]'>Ready to hire a virtual assistant? <Link className='underline text-[var(--dark-golden-color)]'>Click here</Link></h4>        
+        <h2 className='text-[7vw] lg:text-[2.4vw] font-[700] tracking-normal mx-auto lg:mx-0 lg:mb-5'>How it Works</h2>
         <div className='flex flex-col items-center w-full mt-4'>
-            <div className="flex items-center space-x-4 w-fit">
+            <div className="flex justify-between items-center space-x-4 w-fit text-center">
                 <span
-                className={`cursor-pointer lg:text-[1.3vw] ${selected === 'Marketing Agencies' ? 'text-black font-semibold' : 'text-gray-400'}`}
+                className={`w-[40%] lg:w-auto cursor-pointer text-[5vw] lg:text-[1.3vw] ${selected === 'Marketing Agencies' ? 'text-black font-semibold' : 'text-gray-400'}`}
                 onClick={() => setSelected('Marketing Agencies')}
                 >
-                Marketing Agencies
+                With Employers
                 </span>
                 
                 <div className={`w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${selected === 'Marketing Agencies' ? 'bg-green-600' : 'bg-green-600'}`} onClick={handleToggle} >
@@ -160,10 +161,10 @@ const OurProcesses = () => {
                 </div>
                 
                 <span
-                className={`cursor-pointer lg:text-[1.3vw] ${selected === 'Hiring Process' ? 'text-black font-semibold' : 'text-gray-400'}`}
+                className={`w-[40%] lg:w-auto cursor-pointer text-[5vw] lg:text-[1.3vw] ${selected === 'Hiring Process' ? 'text-black font-semibold' : 'text-gray-400'}`}
                 onClick={() => setSelected('Hiring Process')}
                 >
-                Hiring Process
+                With Job Seekers
                 </span>
             </div>
             <div className='block w-full mt-6'>
@@ -173,9 +174,9 @@ const OurProcesses = () => {
                     <ProcessDisplay TargetData={HiringSteps} />
                 ) }
             </div>
-            <div className='flex flex-col w-full items-center justify-center mt-[4rem]'>
-                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Book a FREE Agency Sale Strategy Call Now! <RightArrow  className='text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
-                <h3 className='mt-4 px-[30%] text-center lg:text-[1.05vw] '>Keep scrolling to hear from our clients sharing how our virtual assistants have saved them up to 50% in payroll costs while scaling their marketing agency and giving them their time back.</h3>
+            <div className='flex flex-col w-full items-center justify-center mt-4 lg:mt-[4rem]'>
+                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-6 lg:pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Book a FREE Agency Sale Strategy Call Now! <RightArrow  className='hideOnMobile lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
+                <h3 className='mt-4 px-0 lg:px-[30%] text-center text-[4.3vw] lg:text-[1.05vw] '>Keep scrolling to hear from our clients sharing how our virtual assistants have saved them up to 50% in payroll costs while scaling their marketing agency and giving them their time back.</h3>
             </div>
         </div>
         

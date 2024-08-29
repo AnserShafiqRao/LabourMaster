@@ -10,18 +10,18 @@ function FAQItem({ question, answer,underline }) {
         <Disclosure>
             {({ open }) => (
             <div className={underline && !open ? 'drop-downs' : ''}>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 lg:text-[1.8vw] font-[700]  text-black focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
+                <Disclosure.Button className="text-start flex justify-between w-full px-4 py-2 text-[4.5vw] lg:text-[1.8vw] font-[700]  text-black focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
                     <span>{question}</span>
                     <span className={`transform transition-transform duration-500 ${open ? 'rotate-180' : ''}`}>
                     {open ? (
-                        <Minus className="text-black lg:text-[1.8vw] font-[700]" />
+                        <Minus className="text-black text-[8vw] lg:text-[1.8vw] font-[700]" />
                     ) : (
-                        <Plus className="text-black lg:text-[1.8vw] font-[700]" />
+                        <Plus className="text-black text-[8vw] lg:text-[1.8vw] font-[700]" />
                     )}
                     </span>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className={`px-4 pt-4 pb-2 text-[1.3vw] text-stone-800 transform transition-transform duration-500 ${open ? 'shadow-2xl shadow-stone-200 rounded-3xl':''} ` } >
+                <Disclosure.Panel className={`px-4 pt-4 pb-2 text-[4.5vw] lg:text-[1.3vw] text-stone-800 transform transition-transform duration-500 ${open ? 'shadow-2xl shadow-stone-200 rounded-3xl':''} ` } >
                     {answer}
                 </Disclosure.Panel>
             </div>
@@ -61,9 +61,9 @@ const FAQs = () => {
       ];
   return (
     <div id='faqs' className='flex flex-col w-full justify-center items-center'>
-        <h2 className='lg:text-[2.4vw] font-[700] tracking-normal '>Frequently Asked Questions</h2>
+        <h2 className='text-[6vw] lg:text-[2.4vw] font-[700] tracking-normal '>Frequently Asked Questions</h2>
         {/* <h4 className='mb-2 text-[7vw] lg:text-[1.3vw] font-[400] tracking-normal text-[var(--black-color)]'>Ready to hire a virtual assistant? <Link className='underline text-[var(--dark-golden-color)]'>Click here</Link></h4>         */}
-        <div className=' w-[55%]'>
+        <div className=' w-[100%] lg:w-[55%]'>
         {faqs.map((faq, index) => (
         <div key={index} className="my-4">
           <FAQItem question={faq.question} answer={faq.answer} underline={faq.underline} />

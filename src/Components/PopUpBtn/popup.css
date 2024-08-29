@@ -64,7 +64,7 @@
   .popBtn {
     width: 100%;
     min-width: 100%;
-    height: 100%;
+    /* height: 100%; */
     transition: transform 0.3s ease-in-out;
   }
   .popBtn:hover{
@@ -151,7 +151,7 @@
   
     .popBtn {
       font-size: 5vw;
-      padding: 5vh 3vw;
+      /* padding: 5vh 3vw; */
     }
   
     .popup-closeBtn {

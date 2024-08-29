@@ -82,17 +82,17 @@
 }
 
 @media (max-width: 1000px) {
-    .marquee1 {
+    .marquee1, .marquee2 {
         display: flex;
         overflow: hidden;
-        height: 4vh;
+        height: 7vh;
         user-select: none;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
-    .marquee2__group .afterColon {
-        font-size: 15px;
+    .marquee1__group .afterColon,.marquee2__group .afterColon  {
+        font-size: 7vw;
     }
 
     .marquee1__group .beforeColumn {
@@ -101,6 +101,6 @@
     }
 
     .companyImg {
-        width: 28px;
+        width: 40px;
     }
 }

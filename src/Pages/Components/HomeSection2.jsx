@@ -39,11 +39,11 @@ const HomeSection2 = () => {
               
               {/* <h5 className='mb-2 text-[7vw] lg:text-[1.9vw] font-[700] capitalize text-[var(--black-color)]'>Did you know virtual assistants.....</h5> */}
               <div>
-                <h5 className='my-6 lg:my-2 text-[4.5vw] leading-6 lg:leading-auto lg:text-[1.1vw] font-[700] capitalize tracking-wide'>Our approach saves you time, reduces hiring risks, and ensures you have the right people in place to drive your business forward.</h5>
-                <h5 className='my-6 lg:my-2 text-[4.5vw] leading-6 lg:leading-auto lg:text-[1.1vw] font-[700] capitalize tracking-wide'>I’d love to schedule a quick 15-minute Google Meet to discuss how we can meet your hiring needs. What time works best for you this week?</h5>
-                <h5 className='my-6 lg:my-2 text-[4.5vw] leading-6 lg:leading-auto lg:text-[1.1vw] font-[700] capitalize tracking-wide'>Thank you for considering Labour Master as your hiring partner.</h5>
+                <h5 className='my-6 lg:my-2 text-[4.5vw] lg:text-[1.1vw] font-[500] capitalize tracking-wide'>Our approach saves you time, reduces hiring risks, and ensures you have the right people in place to drive your business forward.</h5>
+                <h5 className='my-6 lg:my-2 text-[4.5vw] lg:text-[1.1vw] font-[500] capitalize tracking-wide'>I’d love to schedule a quick 15-minute Google Meet to discuss how we can meet your hiring needs. What time works best for you this week?</h5>
+                <h5 className='my-6 lg:my-2 text-[4.5vw] lg:text-[1.1vw] font-[500] capitalize tracking-wide'>Thank you for considering Labour Master as your hiring partner.</h5>
               </div>
-              <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Hire Candidates <RightArrow  className='text-[8vw] lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
+              <Link to={'/hire-candidates-application/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Hire Candidates <RightArrow  className='text-[8vw] lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
           </div>
 
 
