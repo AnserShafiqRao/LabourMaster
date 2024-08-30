@@ -222,7 +222,7 @@ const Home = () => {
 
 
       {/* Section 6 */}
-      <div className='flex w-full flex-col-reverse lg:flex-row'>
+      <div id='section-6' className='flex w-full flex-col-reverse lg:flex-row'>
         <div className=' max-w-[95%] px-8 mt-4 mb-8 lg:mt-auto lg:mb-auto lg:w-[50%] flex flex-col items-start justify-center lg:px-14'>
           <h3 className='text-[7vw] lg:text-[1.8vw] leading-7 font-[600] capitalize tracking-[0.75px] text-[var(--dark-golden-color)] mb-2'>Connecting Talent with Top Opportunities</h3>
           <p className='text-[var(--dark-black-color)] lg:text-[1.1vw]'>At Labour Master Solutions, we are dedicated to helping you achieve your career goals. We connect you with the best job opportunities that align with your skills and aspirations. Our team offers personalized support to ensure you find roles that foster both growth and professional success. Let us be your partner in building a rewarding and successful career.</p>

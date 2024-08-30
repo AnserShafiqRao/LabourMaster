@@ -7,6 +7,8 @@
   --lato-text-font: 'Lato', sans-serif;
   --montserrat-text-font: 'Montserrat', sans-serif;
   --exo-2-text-font: 'Exo 2', sans-serif;
+  --open-sans-text-font: "Open Sans", sans-serif;
+  --josefin-sans-text-font: "Josefin Sans", sans-serif;
 
   --golden-color: #E3C86A;
   --dark-golden-color: #B98831;
@@ -16,11 +18,15 @@
 }
 
 *{
-  font-family: var(--exo-2-text-font);
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
   background-color: #fffdf9;
 }
+html {
+  scroll-behavior:smooth;
+}
+
 ::-webkit-scrollbar{
   width: 7px
 }

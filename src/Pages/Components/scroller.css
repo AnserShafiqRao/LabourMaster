@@ -1,0 +1,106 @@
+.marquee1, .marquee2 {
+    display: flex;
+    overflow: hidden !important;
+    height: 10vh;
+    width: 111%;
+    margin-left: -5.7%;
+    user-select: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+  
+.marquee1__group, .marquee2__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0rem;
+    min-width: 100%;
+}
+
+.marquee1{
+    background-color: #E3C86A;
+}
+.marquee2{
+    background-color: rgb(30, 30, 30);
+}
+
+.anime1 {
+    animation: scroll 60s linear infinite;
+}
+
+.anime2 {
+    animation: scroll-reverse 60s linear infinite;
+}
+
+.marquee1__group .afterColon, .marquee2__group .afterColon {
+    color: var(--black-color);
+    font-size: 3vw;
+    font-family: var(--exo-2-text-font) !important;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.marquee1__group .afterColon{
+    color: var(--black-color);
+}
+
+.marquee2__group .afterColon{
+    color: var(--white-color);
+}
+
+.companyImg {
+    width: 3vw;
+    margin-inline: 1vw;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 2rem));
+    }
+}
+
+@keyframes scroll-reverse {
+    from {
+        transform: translateX(calc(-100% - 2rem));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .marquee1_group h1 {
+        font-size: 4vw;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1000px) {
+    .marquee1, .marquee2 {
+        display: flex;
+        overflow: hidden;
+        height: 7vh;
+        user-select: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .marquee1__group .afterColon,.marquee2__group .afterColon  {
+        font-size: 7vw;
+    }
+
+    .marquee1__group .beforeColumn {
+        font-size: 20px;
+        letter-spacing: 0.75px;
+    }
+
+    .companyImg {
+        width: 40px;
+    }
+}

@@ -4,13 +4,37 @@
   top: 0;
   z-index: 1000;
   display: flex;
-  width: 100%;
   flex-direction: column;
   transition: top 0.3s ease-in-out; /* Smooth transition for header visibility */
 }
+.underline-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 7px;
+  overflow: hidden;
+}
+
+.underline-button::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-golden-color);
+  transition: width 0.4s ease-in-out;
+}
+
+.underline-button:hover::before {
+  width: 100%;
+}
 
 .active-background {
-  background-color: #bc9740;
+  border-bottom:2px solid #bc9740;
   width: fit-content;
 }
 .desktop-menu{
@@ -20,11 +44,11 @@
   margin-inline: auto;
 }
 .mobile-menu-icon {
-  color: var(--golden-color);
+  color: var(--dark-golden-color);
 }
 
 .sticky-header.hidden {
-  top: -100%;   
+  top: 0;
 }
 
 .sticky-header.visible {
@@ -35,8 +59,7 @@
   position: sticky;
   left: 0;
   width: 100%;
-  height: calc(100vh - 64px);
-  background-color: #1c1c1c;
+  height: calc(100vh - 95px);
   z-index: 999;
   overflow-y: auto;
 }
@@ -68,7 +91,7 @@
     width: fit-content;
     padding: 1vh 1vw;
     border-radius: 10px;
-    font-size: 0.95vw;
+    font-size: 1.1vw;
     font-weight: 600;
     background-color: var(--golden-color);
     transition: transform 0.3s ease-in-out;
@@ -83,7 +106,7 @@
     display: flex;
     align-items: center;
     padding: 0.5vh 0.25vw;
-    font-size: 1vw;
+    font-size: 1.25vw;
     color: var(--white-color);
     transition: transform 0.3s ease-in-out;
   }
@@ -95,7 +118,7 @@
   
   .footer-social-icons {
     font-size: 2vw;
-    margin-left: 1vw;
+    margin-right: 1vw;
     color: var(--white-color);
     transition: transform 0.3s ease-in-out;
   }
@@ -117,18 +140,18 @@
   
     .footer-contact-btn {
       width: fit-content;
-      padding: 1vh 2vw;
+      padding: 1vh 4vw;
       border-radius: 10px;
-      font-size: 3.5vw;
+      font-size: 4.5vw;
     }
   
     .footer-contact-links {
-      font-size: 3.5vw;
+      font-size: 4.5vw;
     }
   
     .footer-social-icons {
-      font-size: 6vw;
-      margin-left: 3vw;
+      font-size: 8vw;
+      margin-right: 3vw;
     }
   }
   
