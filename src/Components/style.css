@@ -140,18 +140,18 @@
   
     .footer-contact-btn {
       width: fit-content;
-      padding: 1vh 2vw;
+      padding: 1vh 4vw;
       border-radius: 10px;
-      font-size: 3.5vw;
+      font-size: 4.5vw;
     }
   
     .footer-contact-links {
-      font-size: 3.5vw;
+      font-size: 4.5vw;
     }
   
     .footer-social-icons {
-      font-size: 6vw;
-      margin-left: 3vw;
+      font-size: 8vw;
+      margin-right: 3vw;
     }
   }
   

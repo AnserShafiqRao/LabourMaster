@@ -16,7 +16,7 @@ const navigation = [
   { name: 'How it works', href: '/#how-it-works', current: false, onlymobile: false },
   { name: 'Our Industries', href: '/#our-industries', current: false, onlymobile: false },
   { name: 'Contact Us', href: '/#contact-section', current: false, onlymobile: false },
-  { name: 'FAQs', href: '/#faqs', current: false, onlymobile: true}
+  // { name: 'FAQs', href: '/#faqs', current: false, onlymobile: true}
 ];
 
 function classNames(...classes) {
@@ -74,6 +74,7 @@ export default function Header() {
       window.removeEventListener('scroll', controlHeader);
     };
   });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -81,7 +82,7 @@ export default function Header() {
   return (
 
     <>
-    <div className={`${window.screen.width > 1000 ? 'flex justify-between w-[100%] px-[5%] mx-auto my-1 ' : 'hideOnMobile' }`}>
+    <div className={`${window.screen.width > 1000 ? 'flex justify-between w-[100%] px-[5%] mx-auto mt-2 mb-1 ' : 'hideOnMobile' }`}>
       <div className='flex flex-row'>
         <Fb className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer text-stone-700 hover:text-[var(--dark-golden-color)]'/>
         <Insta className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
@@ -89,7 +90,7 @@ export default function Header() {
       </div>
 
       <div className='flex flex-row justify-center'>
-        <h3 className='lg:text-[1vw] font-[600]  text-stone-700 tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><HashLink to={'/#faqs'}>FAQs</HashLink></h3>
+        {/* <h3 className='lg:text-[1vw] font-[600]  text-stone-700 tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><HashLink to={'/#faqs'}>FAQs</HashLink></h3> */}
         {/* <h3 className='lg:text-[1vw] font-[600]  text-stone-700 tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><Link to={'/about-us/'}>Blog</Link> </h3> */}
         <h3 className='flex flex-row items-center  text-stone-700 lg:text-[1vw] font-[600] tracking-[1px] mx-[0.5vw] transition-transform ease-in-out hover:scale-[1.025] hover:border-b-2 hover:border-[var(--dark-golden-color)] '><ContactUs className='mr-2'/> <Link to={'tel:+6475090006'}>(647) 509 0006</Link></h3>
       </div>

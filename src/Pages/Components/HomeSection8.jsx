@@ -41,7 +41,7 @@ const ContactSection = () => {
     }
 
     return (
-        <div id='contact-section' className='flex flex-row flex-wrap w-full justify-center items-center mt-10'>
+        <div className='flex flex-row flex-wrap w-full justify-center items-center mt-10'>
             <div className='flex flex-col w-[100%] hideOnDesktop mb-8'>
                 <img className='w-full h-[45vh] object-cover rounded-3xl shadow-lg shadow-stone-500' src={ContactSide} alt='Contact - Labour Master'/>
             </div>

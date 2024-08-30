@@ -1,21 +1,21 @@
-import React,{ useState} from 'react'
+// import React,{ useState} from 'react'
+import React from 'react';
 import '../styles/style.css'
 import { Link } from 'react-router-dom'
-import { FaArrowRight as RightArrow} from "react-icons/fa6";
-
-// Marketing Agencies
-import { MdOutlinePhoneAndroid as MA_1} from "react-icons/md";
-import { FaHandshakeSimple as MA_2} from "react-icons/fa6";
-import { CiServer as MA_3} from "react-icons/ci";
-import { AiFillProduct as MA_4} from "react-icons/ai";
+import { MdPhoneIphone as CallUs } from "react-icons/md";
 
 // Hiring Process
 import { FaRegFileAlt as HP_1} from "react-icons/fa";
-import { PiPhoneCallDuotone as HP_2} from "react-icons/pi";
-import { TbDeviceComputerCamera as HP_3} from "react-icons/tb";
-import { TiTicket as HP_4} from "react-icons/ti";
-import { FaListCheck as HP_5} from "react-icons/fa6";
-import { GrCheckboxSelected as HP_6} from "react-icons/gr";
+import { BiCustomize as HP_2} from "react-icons/bi";
+import { SiCrowdsource as HP_3} from "react-icons/si";
+import { TbUserScan as HP_4} from "react-icons/tb";
+import { FaUserCheck as HP_5} from "react-icons/fa6";
+import { ImProfile as HP_6} from "react-icons/im";
+import { PiPresentationDuotone as HP_7} from "react-icons/pi";
+import { TbDeviceComputerCamera as HP_8} from "react-icons/tb";
+import { TiTicket as HP_9} from "react-icons/ti";
+import { GrCheckboxSelected as HP_10} from "react-icons/gr";
+
 import { FaArrowDownLong as DOWN} from "react-icons/fa6";
 
 
@@ -61,94 +61,92 @@ const ProcessDisplay = ( {TargetData} ) =>{
 
 
 const OurProcesses = () => {
-    const [selected, setSelected] = useState('Marketing Agencies');
+    // const [selected, setSelected] = useState('Marketing Agencies');
     
-    const MarketingData = [
-        {
-            step: '1',
-            icon: MA_1,
-            type: '',
-            title: 'Discovery Call',
-            description: 'We get your candidate requirements and send you a customized job description.',
-        },
-        {
-            step: '2',
-            icon: MA_2,
-            type: '',
-            title: 'Interview Process',
-            description: 'We get your candidate requirements and send you a customized job description.',
-        },
-        {
-            step: '3',
-            icon: MA_3,
-            type: '',
-            title: 'Onboarding',
-            description: 'We get your candidate requirements and send you a customized job description.',
-        },
-        {
-            step: 'Last',
-            icon: MA_4,
-            type: '',
-            title: 'Step Back & Grow',
-            description: 'We get your candidate requirements and send you a customized job description.',
-        },
 
-    ]
     const HiringSteps = [
         {
             step: '1',
             icon: HP_1,
             type: '',
-            title: 'The Resume Hunt',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Initial Consultation',
+            description: 'We meet with you to understand your hiring needs, including the specific skills, experience, and qualifications required for the role.',
         },
         {
             step: '2',
             icon: HP_2,
             type: '',
-            title: 'Initial Screening Call',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Customized Job Description',
+            description: 'Based on your requirements, we create a tailored job description that accurately reflects the role and expectations.',
         },
         {
             step: '3',
             icon: HP_3,
             type: '',
-            title: 'Zoom Interview',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Candidate Sourcing',
+            description: 'We leverage our extensive network and resources to source potential candidates who meet your criteria.',
         },
         {
             step: '4',
             icon: HP_4,
             type: 'special',
-            title: 'Golden Ticket',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Prescreening',
+            description: 'Our team reviews resumes and conducts initial screenings to shortlist candidates who best match your requirements.',
         },
         {
             step: '5',
             icon: HP_5,
             type: '',
-            title: 'Pre-Onboarding Session',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Background Checks',
+            description: 'We perform thorough background checks, including employment history, criminal records, and educational verification, to ensure candidate reliability and suitability.',
+        },
+        {
+            step: '6',
+            icon: HP_6,
+            type: '',
+            title: 'Candidate Profiles',
+            description: 'We prepare detailed profiles of the top candidates, highlighting their qualifications, experience, and background check results.',
+        },
+        {
+            step: '7',
+            icon: HP_7,
+            type: '',
+            title: 'Presentation to Client',
+            description: 'We present these profiles to you for review, providing all necessary information to help you make an informed decision.',
+        },
+        {
+            step: '8',
+            icon: HP_8,
+            type: 'special',
+            title: 'Interview Coordination',
+            description: 'We coordinate interviews between you and the shortlisted candidates, assisting with scheduling and any additional requirements.',
+        },
+        {
+            step: '9',
+            icon: HP_9,
+            type: '',
+            title: 'Feedback and Selection',
+            description: 'After interviews, we gather your feedback, assist with final candidate selection, and help with the offer process.',
         },
         {
             step: 'Last',
-            icon: HP_6,
+            icon: HP_10,
             type: '',
-            title: 'Good Luck For Job',
-            description: 'We get your candidate requirements and send you a customized job description.',
+            title: 'Onboarding Support',
+            description: 'We provide support throughout the onboarding process to ensure a smooth transition for both you and the new hire.',
         },
     ]
 
 
-    const handleToggle = () => {
-        setSelected(selected === 'Marketing Agencies' ? 'Hiring Process' : 'Marketing Agencies');
-    };
+    // const handleToggle = () => {
+    //     setSelected(selected === 'Marketing Agencies' ? 'Hiring Process' : 'Marketing Agencies');
+    // };
 
     return (
-    <div  id='how-it-works' className='flex flex-col justify-start items-start my-8 lg:mb-10 lg:items-start w-full lg:min-h-[80vh]'>
-        <h2 className='text-[7vw] lg:text-[2.4vw] font-[700] tracking-normal mx-auto lg:mx-0 lg:mb-5'>How it Works</h2>
+    <div className='flex flex-col justify-start items-start my-8 lg:mb-10 lg:items-start w-full lg:min-h-[80vh]'>
+        <h2 className='text-[7vw] lg:text-[2.4vw] font-[700] tracking-normal mx-auto lg:mx-auto lg:mb-3'>How it Works</h2>
         <div className='flex flex-col items-center w-full mt-4'>
-            <div className="flex justify-between items-center space-x-4 w-fit text-center">
+            {/* <div className="flex justify-between items-center space-x-4 w-fit text-center">
                 <span
                 className={`w-[40%] lg:w-auto cursor-pointer text-[5vw] lg:text-[1.3vw] ${selected === 'Marketing Agencies' ? 'text-black font-semibold' : 'text-gray-400'}`}
                 onClick={() => setSelected('Marketing Agencies')}
@@ -166,17 +164,18 @@ const OurProcesses = () => {
                 >
                 With Job Seekers
                 </span>
-            </div>
+            </div> */}
             <div className='block w-full mt-6'>
-                {selected === 'Marketing Agencies' ? (
+            <ProcessDisplay TargetData={HiringSteps} />
+                {/* {selected === 'Marketing Agencies' ? (
                     <ProcessDisplay TargetData={MarketingData}/>
                 ): (
-                    <ProcessDisplay TargetData={HiringSteps} />
-                ) }
+                    
+                ) } */}
             </div>
             <div className='flex flex-col w-full items-center justify-center mt-4 lg:mt-[4rem]'>
-                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-6 lg:pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Book a FREE Agency Sale Strategy Call Now! <RightArrow  className='hideOnMobile lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
-                <h3 className='mt-4 px-0 lg:px-[30%] text-center text-[4.3vw] lg:text-[1.05vw] '>Keep scrolling to hear from our clients sharing how our virtual assistants have saved them up to 50% in payroll costs while scaling their marketing agency and giving them their time back.</h3>
+                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-3 mb-4 pl-6 pr-6 lg:pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Call Us Today <CallUs  className='hideOnMobile lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
+                {/* <h3 className='mt-4 px-0 lg:px-[30%] text-center text-[4.3vw] lg:text-[1.05vw] '>Keep scrolling to hear from our clients sharing how our virtual assistants have saved them up to 50% in payroll costs while scaling their marketing agency and giving them their time back.</h3> */}
             </div>
         </div>
         

@@ -8,8 +8,9 @@ import VideoSection from './Components/HomeSection3';
 import OurProcesses from './Components/HomeSection5';
 import ContentScroller from './Components/ContentScroller';
 import IndustriesDisplay from './Components/HomeSection6';
-import FAQs from './Components/HomeSection7';
+// import FAQs from './Components/HomeSection7';
 import ContactSection from './Components/HomeSection8';
+// import JumpToTop from '../Components/JumpToTop';
 
 
 const Home = () => {
@@ -25,7 +26,7 @@ const Home = () => {
                 <button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-3 lg:px-8 lg:py-4 text-[4.5vw] lg:text-[1.3vw] font-[600] capitalize text-stone-50 tracking-wide'>Hire Candidates</button>
                 </Link>
                 <Link className='flex items-center' to={'/job-seekers-application/'}>
-                <button className='ml-4 lg:ml-6 text-[4.5vw] lg:text-[1.4vw] font-[700] capitalize underline  tracking-wide'>Receive Job Options</button>
+                <button className='ml-4 lg:ml-6 text-[4.5vw] lg:text-[1.4vw] font-[700] capitalize underline  tracking-wide'>Apply Now</button>
                 </Link>
             </div>
             
@@ -55,12 +56,12 @@ const Home = () => {
       <IndustriesDisplay />
 
       {/* Section 7 */}
-      <FAQs />
+      {/* <FAQs /> */}
 
       {/* Section 8 */}
       <ContactSection /> 
 
-
+      {/* <JumpToTop /> */}
     </div>
   )
 }
