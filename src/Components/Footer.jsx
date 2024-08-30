@@ -12,10 +12,9 @@ import { BsLinkedin as Linkedin} from "react-icons/bs";
 
 const Footer = () => {
   return (
+    <>
     <div id='footer' className='w-full h-auto px-6 py-8 flex flex-col items-start bg-zinc-900 bottom-0
-    lg:px-8 lg:py-8 lg:flex-row lg:justify-center
-
-    '>
+    lg:px-8 lg:py-8 lg:flex-row lg:justify-center'>
         <div className=' lg:w-[40%] lg:px-3'> 
             <img src={FooterLogo} alt='Labour Master Solution' className='w-fit h-[16vh] ml-[0px]'/>
             <h4 className='text-slate-50 mt-2 text-[4.5vw] lg:text-[1.05vw] tracking-[0.5px]'>Labour Master Solution Company is dedicated to HR excellence, delivering top-tier staff for our clients. We swiftly attract skilled candidates to meet your business needs, offering experienced and reliable temporary employees.</h4>
@@ -40,12 +39,17 @@ const Footer = () => {
         <div className=' lg:w-[20%] lg:px-0'> 
             <h2 className='footer-heading text-[6.5vw] lg:text-[1.6vw]'>Follow Us</h2>
             <div className='flex flex-row ml-1 lg:ml-0 lg:mt-2'>
-            <Link className='footer-social-icons'><Facebook /></Link>
-                <Link className='footer-social-icons'><Insta /></Link>
-                <Link className='footer-social-icons'><Linkedin /></Link>
+                <Link to={'https://www.facebook.com/profile.php?id=100094065797782'} className='footer-social-icons'><Facebook /></Link>
+                <Link to={'https://www.instagram.com/labourmaster.ca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='} className='footer-social-icons'><Insta /></Link>
+                <Link to={'http://www.linkedin.com/in/felicia-lue-6a9102280'} className='footer-social-icons'><Linkedin /></Link>
             </div>
         </div>
     </div>
+    <div className='w-full h-auto px-6 py-0 flex flex-col items-start bg-zinc-900 border-t-[1px] border-[var(--golden-color)] bottom-0
+    lg:px-0 lg:pt-1 lg:flex-row lg:justify-center'>
+        <h5 className='text-[3vw] lg:text-[0.9vw] text-[var(--golden-color)] tracking-wide' >© 2013 Labour Master Solutions. All Rights Reserved</h5>
+    </div>
+    </>
   )
 }
 

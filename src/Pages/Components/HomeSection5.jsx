@@ -28,11 +28,11 @@ const ProcessDisplay = ( {TargetData} ) =>{
                     (content.step === 'Last'? (
                         <div key={index} className='flex flex-col justify-center items-center'>
                             <div key={index} className={`grid  grid-cols-1  lg:grid-cols-[25%_70%_5%] w-[100%] bg-stone-900  hover:${content.type === 'special' ? 'bg-[var(--golden-color)]': 'bg-[#eddbbd] hover:text-stone-900' } text-[var(--white-color)] rounded-[10px] p-6`}>
-                                <div className='flex flex-col lg:flex-row just lg:justify-start items-center lg:pl-12'>
+                                <div className='flex flex-col lg:flex-col just lg:justify-start items-center lg:items-start lg:pl-12'>
                                     <h2 className='text-[15vw] lg:text-[2.2vw] lg:mr-4'>{React.createElement(content.icon)}</h2>
                                     <h2 className='text-[5vw] lg:text-[1.3vw] font-[700]' >{content.title}</h2>
                                 </div>
-                                <div className='text-center lg:text-start pl-4'>
+                                <div className='text-center lg:text-start pl-2 pt-1'>
                                     <h2 className='text-[4.5vw] font-[500] lg:text-[1.3vw] lg:font-[700]' >{content.description}</h2>
                                 </div>
                             </div>
@@ -40,11 +40,11 @@ const ProcessDisplay = ( {TargetData} ) =>{
                     ): (
                         <div key={index} className='flex flex-col justify-center items-center'>
                             <div key={index} className={`grid grid-cols-1 lg:grid-cols-[25%_70%_5%] w-[100%] bg-stone-900 ${content.type === 'special' ? 'hover:bg-[var(--golden-color)]': 'hover:bg-[#eddbbd]'}  hover:text-stone-900 text-[var(--white-color)] rounded-[10px] p-6`}>
-                                <div className='flex flex-col lg:flex-row justify-start items-center lg:pl-12'>
+                                <div className='flex flex-col lg:flex-col justify-start items-center lg:items-start lg:pl-12'>
                                     <h2 className='text-[15vw] lg:text-[2.2vw] lg:mr-4'>{React.createElement(content.icon)}</h2>
                                     <h2 className='text-[5vw] lg:text-[1.3vw] font-[700]' >{content.title}</h2>
                                 </div>
-                                <div className='text-center lg:text-start pl-4'>
+                                <div className='text-center lg:text-start pl-2 pt-1'>
                                     <h2 className='text-[4.5vw] font-[500] lg:text-[1.3vw] lg:font-[700]' >{content.description}</h2>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@ const OurProcesses = () => {
                 ) } */}
             </div>
             <div className='flex flex-col w-full items-center justify-center mt-4 lg:mt-[4rem]'>
-                <Link to={'/about-us/'}><button className='flex flex-row items-center bg-stone-800 mt-3 mb-4 pl-6 pr-6 lg:pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Call Us Today <CallUs  className='hideOnMobile lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
+                <Link to={'tel:+16475090006'}><button className='flex flex-row items-center bg-stone-800 mt-3 mb-4 pl-6 pr-6 lg:pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Call Us Today <CallUs  className='hideOnMobile lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
                 {/* <h3 className='mt-4 px-0 lg:px-[30%] text-center text-[4.3vw] lg:text-[1.05vw] '>Keep scrolling to hear from our clients sharing how our virtual assistants have saved them up to 50% in payroll costs while scaling their marketing agency and giving them their time back.</h3> */}
             </div>
         </div>

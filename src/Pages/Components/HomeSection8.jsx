@@ -36,8 +36,21 @@ const ContactSection = () => {
         }
 
     }   
-    const handleSubmission = () =>{
+    const handleSubmission = async(e) =>{
+        e.preventDefault();
         console.log(contactForm);
+        const sendingMail = await fetch('https://formspree.io/f/mwpeyjwd',{
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(contactForm)
+        });
+        if (sendingMail.ok){
+            console.log('Contact Form Mail Sent!!!');
+            // window.location.reload();
+        }
     }
 
     return (

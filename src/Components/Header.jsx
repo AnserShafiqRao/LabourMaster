@@ -84,9 +84,9 @@ export default function Header() {
     <>
     <div className={`${window.screen.width > 1000 ? 'flex justify-between w-[100%] px-[5%] mx-auto mt-2 mb-1 ' : 'hideOnMobile' }`}>
       <div className='flex flex-row'>
-        <Fb className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer text-stone-700 hover:text-[var(--dark-golden-color)]'/>
-        <Insta className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
-        <LinkedIn className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
+        <Fb onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100094065797782'} className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer text-stone-700 hover:text-[var(--dark-golden-color)]'/>
+        <Insta onClick={() => window.location.href = 'https://www.instagram.com/labourmaster.ca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='} className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
+        <LinkedIn onClick={() => window.location.href = 'http://www.linkedin.com/in/felicia-lue-6a9102280'} className='text-[6vw] lg:text-[1.2vw] lg:mx-[0.5vw] cursor-pointer  text-stone-700 hover:text-[var(--dark-golden-color)]'/>
       </div>
 
       <div className='flex flex-row justify-center'>

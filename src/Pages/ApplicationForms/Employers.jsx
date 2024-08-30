@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles.css'
+import emailjs from 'emailjs-com';
+
+
+emailjs.init('I2EAF44R7A0s5ERvw')
+
 
 
 const EmployersFormPage = () => {
 
-    // const [error, setError] = useState('');
+    const [submission, setSubmission] = useState(false);
     const [empForm, setEmpForm] = useState({
         Firstname: '',
         Lastname:'',
@@ -25,7 +30,7 @@ const EmployersFormPage = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-    
+        
         if (name === 'Phone') {
           let formattedPhone = value.replace(/\D/g, '');
           if (formattedPhone.length > 10) {
@@ -46,8 +51,31 @@ const EmployersFormPage = () => {
         }
       };
 
-    const handleSubmission = () =>{
-        console.log('Hello');
+      useEffect(() => {
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const timeAndDate = new Date().toLocaleString('en-GB', { timeZone: userTimeZone, hour12: false });
+        const [date, time] = timeAndDate.split(', ');
+    
+        setEmpForm((prev) => ({
+          ...prev,
+          SubmissionDate: date,
+          SubmissionTime: time,
+        }));
+      }, []);
+
+
+    const handleSubmission = (e) =>{
+        e.preventDefault();
+        console.log(empForm);
+        emailjs.send('service_rvz9ehq', 'template_8w5fbev', empForm, 'I2EAF44R7A0s5ERvw')
+        .then( (response) =>{
+            console.log('Sucessfully Sent!!', response.status, response.text);
+            setSubmission(true);
+        },(error) => {
+           console.log('Error => ', error);
+        }
+        ).catch((e) => console.log(e))
+
     }
     return (
         <div className='w-[90%] mx-auto flex flex-col'>
@@ -59,10 +87,14 @@ const EmployersFormPage = () => {
                 
                 <div className='flex flex-col justify-start items-start w-[90%] text-start lg:w-full mt-4 lg:mt-6'>
                 
+                {submission ? (
+                    <h3 className='text-center lg:text-[1.7vw] text-[var(--dark-golden-color)] font-[700] capitalize w-full my-6'>Thank you for reaching us,<br/> Will contact you back as soon as possible.</h3>
+                ): ( 
+                <>
                     <h4 className=' tracking-normal text-[4.5vw] lg:text-[1.25vw]'>Please complete the form, and one of our recruiters will be in touch with you soon.</h4>
                     <form className='flex flex-wrap flex-row justify-start w-full' onSubmit={handleSubmission}>
 
-                        <h3 className='w-full text-start text-[4.5vw] lg:text-[1.25vw] text-[var(--black-color)] font-[700] tracking-wide mt-4 lg:mt-3 mb-3 lg:mb-2'>General Information</h3>
+                        {/* <h3 className='w-full text-start text-[4.5vw] lg:text-[1.25vw] text-[var(--black-color)] font-[700] tracking-wide mt-4 lg:mt-3 mb-3 lg:mb-2'>General Information</h3> */}
                         <div className=' flex flex-col text-start w-[100%] lg:w-[48%] mx-[1%] mb-[3%] lg:mb-[1%]'>
                             <label className='text-[4.25vw] lg:text-[1.23vw] font-[600]'>First Name:</label>
                             <input className='text-[4.25vw] lg:text-[1.23vw] bg-stone-300 py-2 lg:py-2 px-2 lg:px-3 rounded-xl lg:rounded-md text-[var(--dark-golden-color)] font-[500]' type='text' name='Firstname' value={empForm.Firstname} onChange={handleChange} required/>
@@ -89,12 +121,16 @@ const EmployersFormPage = () => {
                         </div>
 
 
-                        <h3 className='w-full text-start text-[4.5vw] lg:text-[1.25vw] text-[var(--black-color)] font-[700] tracking-wide mt-4 lg:mt-3 mb-3 lg:mb-2'>Target Candidates Requirements</h3>
+                        {/* <h3 className='w-full text-start text-[4.5vw] lg:text-[1.25vw] text-[var(--black-color)] font-[700] tracking-wide mt-4 lg:mt-3 mb-3 lg:mb-2'>Target Candidates Requirements</h3> */}
                         <div className=' flex flex-col text-start w-[100%] lg:w-[48%] mx-[1%] mb-[3%] lg:mb-[1%]'>
                             <label className='text-[4.25vw] lg:text-[1.23vw] font-[600]'>Required Position: </label>
                             <input className='text-[4.25vw] lg:text-[1.23vw] bg-stone-300 py-2 lg:py-2 px-2 lg:px-3 rounded-xl lg:rounded-md text-[var(--dark-golden-color)] font-[500]' type='text' name='Posting' value={empForm.Posting} onChange={handleChange} required/>
                         </div>
                         <div className=' flex flex-col text-start w-[100%] lg:w-[48%] mx-[1%] mb-[3%] lg:mb-[1%]'>
+                            <label className='text-[4.25vw] lg:text-[1.23vw] font-[600]'>Industry: </label>
+                            <input className='text-[4.25vw] lg:text-[1.23vw] bg-stone-300 py-2 lg:py-2 px-2 lg:px-3 rounded-xl lg:rounded-md text-[var(--dark-golden-color)] font-[500]' type='text' name='Industry' value={empForm.Industry} onChange={handleChange} required/>
+                        </div>
+                        {/* <div className=' flex flex-col text-start w-[100%] lg:w-[48%] mx-[1%] mb-[3%] lg:mb-[1%]'>
                             <label className='text-[4.25vw] lg:text-[1.23vw] font-[600]'>Industry:</label>
                             <select
                             className="text-[4.25vw] lg:text-[1.23vw] bg-stone-300 py-2 lg:py-2 px-2 lg:px-3 rounded-xl lg:rounded-md text-[var(--dark-golden-color)] font-[500]"
@@ -112,7 +148,7 @@ const EmployersFormPage = () => {
                             <option value="Construction">Construction</option>
                             <option value="Marketing">Marketing</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className=' flex flex-col text-start w-[100%] lg:w-[48%] mx-[1%] mb-[3%] lg:mb-[1%]'>
                             <label className='text-[4.25vw] lg:text-[1.23vw] font-[600]'>City: </label>
                             <input className='text-[4.25vw] lg:text-[1.23vw] bg-stone-300 py-2 lg:py-2 px-2 lg:px-3 rounded-xl lg:rounded-md text-[var(--dark-golden-color)] font-[500]' type='text' name='City' value={empForm.City} onChange={handleChange} required/>
@@ -130,6 +166,7 @@ const EmployersFormPage = () => {
                             <button type='submit' className='rounded-[100px] text-[4.5vw] lg:text-[1.25vw] text-[var(--white-color)] font-[600] tracking-wide mt-6 px-8 py-2 bg-[var(--dark-golden-color)] transition-transform duration-500 ease-in-out hover:scale-[1.075]' >Submit</button>
                         </div>
                     </form>
+                    </>)}
                 </div>
             </div>
         </div>

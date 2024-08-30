@@ -27,7 +27,7 @@ export default function Popup({children, bgImg}) {
             <button className={`popBtn  mt-6 text-center items-center justify-center rounded-3xl`} onClick={() => setPopupCall(true)}>{children}</button>
             <DataDisplay trigger={popupCall} setTrigger={setPopupCall}>
                 <div className='popUpData'>
-                    <h3  className='lg:text-[1.6vw] font-[700] tracking-wide lg:mt-6 lg:mb-2 capitalize'>What do you like to avail?</h3>
+                    <h3  className='text-[7vw] lg:text-[1.6vw] font-[700] tracking-wide lg:mt-6 lg:mb-2 capitalize'>What do you like to avail?</h3>
                     <div className='popup-child-btns'>
                         <Link className='popup-child-btn' to='/job-seekers-application/'>Apply For Job</Link>
                         <Link className='popup-child-btn' to='/hire-candidates-application/'>Hire A Candidate</Link>
