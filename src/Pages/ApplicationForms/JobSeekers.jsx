@@ -4,7 +4,7 @@ import './styles.css'
 
 const JobSeekersFormPage = () => {
 
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
     const [applicationForm, setApplicationForm] = useState({
         Firstname: '',
         Lastname:'',
@@ -20,8 +20,8 @@ const JobSeekersFormPage = () => {
     })
 
     const handleChange = (e) => {
-        const { name, value, files } = e.target;
-    
+        // const { name, value, files } = e.target;
+        const { name, value } = e.target;
         if (name === 'Phone') {
           let formattedPhone = value.replace(/\D/g, '');
           if (formattedPhone.length > 10) {
