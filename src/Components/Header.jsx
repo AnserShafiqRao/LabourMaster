@@ -146,7 +146,7 @@ export default function Header() {
                     )
                   ))}
 
-                  <Link to={'/hire-candidates-application/'}><button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >Hire a Candidate</button></Link>
+                  <Link to={'https://labourmaster.ca/hire-candidates-application/'}><button className='bg-[var(--dark-golden-color)] rounded-[30px] px-4 py-2 text-[1.05vw] font-[600] capitalize text-stone-50 transition-transform ease-in-out hover:scale-[1.025]' >Hire a Candidate</button></Link>
                 </div>
                 </div>
               </div>

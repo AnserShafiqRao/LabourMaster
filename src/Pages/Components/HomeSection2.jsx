@@ -43,7 +43,7 @@ const HomeSection2 = () => {
                 <h5 className='my-6 lg:my-2 text-[4.5vw] lg:text-[1.1vw] font-[500] capitalize tracking-wide'>I’d love to schedule a quick 15-minute Google Meet to discuss how we can meet your hiring needs. What time works best for you this week?</h5>
                 <h5 className='my-6 lg:my-2 text-[4.5vw] lg:text-[1.1vw] font-[500] capitalize tracking-wide'>Thank you for considering Labour Master as your hiring partner.</h5>
               </div>
-              <Link to={'/hire-candidates-application/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Hire Candidates <RightArrow  className='text-[8vw] lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
+              <Link to={'https://labourmaster.ca/hire-candidates-application/'}><button className='flex flex-row items-center bg-stone-800 mt-4 pl-6 pr-2 py-2 text-[var(--white-color)] rounded-[100px] text-[4.5vw] lg:text-[1.3vw] font-[600] transition-transform ease-in-out hover:bg-stone-700 hover:scale-[1.015]'>Hire Candidates <RightArrow  className='text-[8vw] lg:text-[3vw] p-2 ml-4 rounded-[50px] bg-stone-500' /></button></Link>
           </div>
 
 
